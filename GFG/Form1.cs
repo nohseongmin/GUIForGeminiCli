@@ -15,6 +15,17 @@ namespace GFG
         public Form1()
         {
             InitializeComponent();
+            tbxQuest.KeyDown += TbxQuest_KeyDown;
+        }
+
+        private void TbxQuest_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                lblAnswer.Text += tbxQuest.Text + Environment.NewLine;
+                tbxQuest.Text = string.Empty;
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }
