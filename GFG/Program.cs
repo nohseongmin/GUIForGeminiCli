@@ -16,7 +16,7 @@ namespace GFG
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMan());
+            Application.Run(new Form1());
         }
     }
 }

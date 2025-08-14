@@ -40,7 +40,7 @@
             this.정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.제작자정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.툴정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblAnswer = new System.Windows.Forms.Label();
+            this.tbxAnswer = new System.Windows.Forms.TextBox();
             this.tbxQuest = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -127,17 +127,21 @@
             this.툴정보ToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.툴정보ToolStripMenuItem.Text = "툴 정보";
             // 
-            // lblAnswer
+            // tbxAnswer
             // 
-            this.lblAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tbxAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAnswer.BackColor = System.Drawing.Color.Black;
-            this.lblAnswer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblAnswer.Location = new System.Drawing.Point(12, 24);
-            this.lblAnswer.Name = "lblAnswer";
-            this.lblAnswer.Size = new System.Drawing.Size(548, 321);
-            this.lblAnswer.TabIndex = 1;
+            this.tbxAnswer.BackColor = System.Drawing.Color.Black;
+            this.tbxAnswer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbxAnswer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tbxAnswer.Location = new System.Drawing.Point(12, 24);
+            this.tbxAnswer.Multiline = true;
+            this.tbxAnswer.Name = "tbxAnswer";
+            this.tbxAnswer.ReadOnly = true;
+            this.tbxAnswer.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbxAnswer.Size = new System.Drawing.Size(548, 321);
+            this.tbxAnswer.TabIndex = 1;
             // 
             // tbxQuest
             // 
@@ -155,7 +159,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(572, 387);
             this.Controls.Add(this.tbxQuest);
-            this.Controls.Add(this.lblAnswer);
+            this.Controls.Add(this.tbxAnswer);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -181,7 +185,7 @@
         private System.Windows.Forms.ToolStripMenuItem 기타설정ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 제작자정보ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 툴정보ToolStripMenuItem;
-        private System.Windows.Forms.Label lblAnswer;
+        private System.Windows.Forms.TextBox tbxAnswer;
         private System.Windows.Forms.TextBox tbxQuest;
     }
 }
