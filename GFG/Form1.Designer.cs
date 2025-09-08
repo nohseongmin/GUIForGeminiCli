@@ -142,6 +142,7 @@
             this.tbxAnswer.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbxAnswer.Size = new System.Drawing.Size(548, 321);
             this.tbxAnswer.TabIndex = 1;
+            this.tbxAnswer.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             // 
             // tbxQuest
             // 
